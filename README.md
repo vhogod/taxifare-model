@@ -1,5 +1,5 @@
-﻿# taxifare-model
-Train a regression model
+﻿#Train a regression model
+ 
 Now it's time build a regression model and train it with the data prepared in the previous exercise. We'll try three different regression algorithms to determine which one produces the most accurate results, and use cross-validation to meaasure accuracy. Then we'll train the best model. Start with a linear-regression model.
 
 from sklearn.linear_model import LinearRegression
@@ -43,3 +43,4 @@ Now predict the fare amount for a 2-mile trip taken at 5:00 p.m. one day later (
 model.predict(pd.DataFrame({ 'day_of_week': [5], 'pickup_time': [17], 'distance': [2.0] }))
 array([10.95309995])
 Does the model predict a higher or lower fare amount for the same trip on Saturday afternoon? Does this make sense given that the data comes from a New York City cab company?
+
